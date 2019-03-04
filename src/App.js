@@ -9,7 +9,7 @@
 
 import React, { Component } from 'react';
 import {Platform, StyleSheet, Text, SafeAreaView} from 'react-native';
-import Styles from './components/Styles';
+import FlexDimensionsBasics from './components/FlexDimentionsBasics';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -23,7 +23,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <Styles />
+        <FlexDimensionsBasics />
       </SafeAreaView>
     );
   }
