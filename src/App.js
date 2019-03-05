@@ -8,15 +8,15 @@
  */
 
 import React, { Component } from 'react';
-import {Platform, StyleSheet, SafeAreaView} from 'react-native';
-import IScrolledDownAndWhatHappenedNextShockedMe from './components/IScrolledDownAndWhatHappenedNextShockedMe';
+import {StyleSheet, SafeAreaView} from 'react-native';
+import FlatListBasics from './components/FlatListBasics';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <IScrolledDownAndWhatHappenedNextShockedMe />
+        <FlatListBasics />
       </SafeAreaView>
     );
   }
