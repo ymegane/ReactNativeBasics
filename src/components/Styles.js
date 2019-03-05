@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
 });
 
 export default class LotsOfStyles extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
     render() {
         return(
             <View>
