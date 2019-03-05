@@ -7,36 +7,15 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-import React, { Component } from 'react';
-import {StyleSheet, SafeAreaView} from 'react-native';
-import FetchExample from './components/FetchExample';
+import {createStackNavigator, createAppContainer} from 'react-navigation'
+import HomeScreen from './HomeScreen';
+import ProfileScreen from './ProfileScreen';
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <SafeAreaView style={styles.container}>
-        <FetchExample />
-      </SafeAreaView>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'stretch',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+const MainNavigator = createStackNavigator({
+    Home: {screen: HomeScreen},
+    Profile: {screen: ProfileScreen}
 });
+
+const App = createAppContainer(MainNavigator);
+
+export default App;
