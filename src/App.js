@@ -9,14 +9,14 @@
 
 import React, { Component } from 'react';
 import {StyleSheet, SafeAreaView} from 'react-native';
-import SectionListBasics from './components/SectionListBasics';
+import FetchExample from './components/FetchExample';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <SectionListBasics />
+        <FetchExample />
       </SafeAreaView>
     );
   }
